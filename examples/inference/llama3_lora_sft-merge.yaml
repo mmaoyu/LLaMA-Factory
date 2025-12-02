@@ -1,7 +1,9 @@
 # model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-model_name_or_path: LLM-Research/Meta-Llama-3-8B-Instruct
-#针对微调的模型进行推理
-adapter_name_or_path: saves/llama3-8b/lora/sft
+#model_name_or_path: LLM-Research/Meta-Llama-3-8B-Instruct
+
+model_name_or_path: /mnt/workspace/LLaMA-Factory/output/llama3_lora_sft
+
+#adapter_name_or_path: saves/llama3-8b/lora/sft
 template: llama3
 infer_backend: huggingface  # choices: [huggingface, vllm, sglang, ktransformers]
 trust_remote_code: true
